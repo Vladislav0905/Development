@@ -1,8 +1,8 @@
 //burger
 
 let burger = document.querySelector('.header__burger');
-let menu = document.querySelector('.header__nav');
-let menuLinks = menu.querySelectorAll('.nav__header-link');
+let menu = document.querySelector('.header-nav');
+let menuLinks = menu.querySelectorAll('.header-nav__item-link');
 
 burger.addEventListener('click',
 
@@ -10,7 +10,7 @@ burger.addEventListener('click',
 
         burger.classList.toggle('burger-active');
 
-        menu.classList.toggle('header__nav-active');
+        menu.classList.toggle('header-nav__active');
 
         document.body.classList.toggle('stop-scroll');
     })
@@ -389,7 +389,7 @@ validation.addField('.input-name', [{
     },
 ]).addField('.input-tel', [{
         rule: 'required',
-        errorMessage: 'Укажите телефон',
+        errorMessage: 'Введите телефон',
     },
     {
         validator: (value) => {

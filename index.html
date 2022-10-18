@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
 
     <title>Blanchard-Художественная галерея</title>
 </head>
@@ -24,48 +23,46 @@
                 <button aria-label="Открыть меню" class="btn-reset header__burger header__burger-open">
                         <span class="header__burger-line"></span>
                     </button>
-                <a class="header__logo">
+                <a class="header-top__logo">
                     <picture>
                         <source srcset="img/header-logo-320.svg" media="(max-width:474px)">
                         <source srcset="img/header-logo-768.svg" media="(max-width:992px)">
                         <source srcset="img/header-logo-1024.svg" media="(max-width:1024px)">
-                        <img class="img-logo" src="img/header-logo.svg" alt="Логотип Blanchard Художественная галерея">
+                        <img class="header-top__logo-img" src="img/header-logo.svg" alt="Логотип Blanchard Художественная галерея">
                     </picture>
                 </a>
-                <nav class="header__nav nav flex">
-                    <ul class="list-reset nav__header-list flex">
-                        <li class="nav__header-item">
-                            <a href="#about" class=" site-text nav__header-link js-scroll-link link-condition">О&nbsp;нас</a>
+                <nav class="header-nav nav flex">
+                    <ul class="list-reset header-nav__list flex">
+                        <li class="header-nav__item">
+                            <a href="#about" class=" site-text header-nav__item-link js-scroll-link link-condition">О&nbsp;нас</a>
                         </li>
-                        <li class="nav__header-item">
-                            <a href="#gallery" class="site-text nav__header-link js-scroll-link link-condition">Галерея</a>
+                        <li class="header-nav__item">
+                            <a href="#gallery" class="site-text header-nav__item-link js-scroll-link link-condition">Галерея</a>
                         </li>
-                        <li class="nav__header-item">
-                            <a href="#catalog" class="site-text nav__header-link js-scroll-link link-condition">Каталог</a>
+                        <li class="header-nav__item">
+                            <a href="#catalog" class="site-text header-nav__item-link js-scroll-link link-condition">Каталог</a>
                         </li>
-                        <li class="nav__header-item">
-                            <a href="#events" class="site-text nav__header-link js-scroll-link link-condition">События</a>
+                        <li class="header-nav__item">
+                            <a href="#events" class="site-text header-nav__item-link js-scroll-link link-condition">События</a>
                         </li>
-                        <li class="nav__header-item">
-                            <a href="#projects" class="site-text nav__header-link js-scroll-link link-condition">Проекты</a>
+                        <li class="header-nav__item">
+                            <a href="#projects" class="site-text header-nav__item-link js-scroll-link link-condition">Проекты</a>
                         </li>
-                        <li class="nav__header-item">
-                            <a href="#contacts" class="site-text nav__header-link  js-scroll-link link-condition">Контакты</a>
+                        <li class="header-nav__item">
+                            <a href="#contacts" class="site-text header-nav__item-link  js-scroll-link link-condition">Контакты</a>
                         </li>
                     </ul>
                     <a href="#" class="link-lk login-enter link-condition" aria-label="Войти в личный кабинет">
-                        <span class="link-arrow-wrap">
-                                <svg
-                                    class="link-arrow"
+                        <span class="link-lk__arrow-wrap">
+                                <svg class="link-lk__arrow-svg"
                                     width="18"
                                     height="13"
                                     viewbox="0 0 18 13"
                                     fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"/>
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="link-lk__arrow-svg-path" d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"/>
                                 </svg>
-                            </span> Войти
+                          </span> Войти
                     </a>
                 </nav>
                 <button type="button" class="header__search-btn btn-reset" aria-label="Найти">
@@ -75,43 +72,37 @@
                             height="29"
                             viewbox="0 0 30 29"
                             fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
+                            xmlns="http://www.w3.org/2000/svg">
                             <rect
                                 width="9.15446"
                                 height="2.28862"
                                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)"
-                                fill="white"
-                            />
+                                fill="white"/>
                             <path
                                 fill-rule="evenodd"
                                 clip-rule="evenodd"
                                 d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                                fill="white"
-                            />
+                                fill="white"/>
                         </svg>
                     </button>
                 <form class="form js-form">
                     <button type="submit" class="form__search-loop btn-reset" aria-label="Поиск по сайту">
-                            <svg
+                            <svg class="form__search-loop-svg"
                                 width="30"
                                 height="29"
                                 viewbox="0 0 30 29"
                                 fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
+                                xmlns="http://www.w3.org/2000/svg">
                                 <rect
                                     width="9.15446"
                                     height="2.28862"
                                     transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)"
-                                    fill="white"
-                                />
+                                    fill="white"/>
                                 <path
                                     fill-rule="evenodd"
                                     clip-rule="evenodd"
                                     d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                                    fill="white"
-                                />
+                                    fill="white"/>
                             </svg>
                         </button>
                     <input class="form__input" type="text" name="text">
@@ -143,30 +134,6 @@
                                     </li>
                                     <li class="main-dropdown-item">
                                         <a href="#" class="main-item-link veroco">Верроккьо</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link mone">Моне</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link sisley">Сислей</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link mane">Мане</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link renuar">Ренуар</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link vangog">Ван Гог</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link sezan">Сезанн</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link gogen">Гоген</a>
-                                    </li>
-                                    <li class="main-dropdown-item">
-                                        <a href="#" class="main-item-link sera">Сёра</a>
                                     </li>
                                 </ul>
                             </div>
@@ -303,9 +270,9 @@
             <h1 class="visually-hidden">Blanchard-Художественная галерея</h1>
             <div class="swiper hero__swiper">
                 <div class="swiper-wrapper swiper-container slider">
-                    <div class="swiper-slide swiper-slide-1"></div>
-                    <div class="swiper-slide swiper-slide-2"></div>
-                    <div class="swiper-slide swiper-slide-3"></div>
+                    <div class="swiper-slide swiper-slide--1"></div>
+                    <div class="swiper-slide swiper-slide--2"></div>
+                    <div class="swiper-slide swiper-slide--3"></div>
                 </div>
             </div>
             <div class="container hero__container">
@@ -314,7 +281,7 @@
                     <p class="hero__descr">
                         Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для&nbsp;новых предложений
                     </p>
-                    <a class="hero__btn js-scroll-link" href="#contacts">Подписаться на&nbsp;рассылку</a>
+                    <a class="hero__link js-scroll-link" href="#contacts">Подписаться на&nbsp;рассылку</a>
                 </div>
             </div>
         </section>
