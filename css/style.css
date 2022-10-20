@@ -239,7 +239,7 @@ img {
 }
 
 .header-nav__item:not(:last-child) {
-    margin-right: 65px;
+    margin-right: 62px;
 }
 
 @media screen and (any-hover: hover) {
@@ -410,6 +410,7 @@ img {
 .header-btm {
     position: absolute;
     left: 0;
+    top: 99px;
     right: 0;
     z-index: 5;
     background: rgba(0, 0, 0, 0.5);
@@ -685,6 +686,7 @@ img {
 .header__form-btn {
     width: 27px;
     height: 27px;
+    padding-top: 5px;
 }
 
 .header__form-search {
@@ -1435,7 +1437,7 @@ img {
     color: var(--color-text);
     max-width: 1080px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 41px;
 }
 
 .catalog__wrap {
@@ -3415,7 +3417,7 @@ img {
     }
     /* GALLERY */
     .gallery {
-        padding-top: 77px;
+        padding-top: 79px;
         padding-bottom: 76px;
     }
     .gallery__container {
