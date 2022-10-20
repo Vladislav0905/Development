@@ -236,6 +236,10 @@ let mySwiper3 = new Swiper(slider3, {
         nextEl: ".events__button-next",
         prevEl: ".events__button-prev"
     },
+    a11y: {
+        prevSlideMessage: 'Предыдущий слайд',
+        nextSlideMessage: 'Следующий слайд',
+    },
 
     breakpoints: {
         500: {
@@ -270,6 +274,10 @@ let mySwiper4 = new Swiper(slider4, {
     navigation: {
         nextEl: ".projects__button-next",
         prevEl: ".projects__button-prev"
+    },
+    a11y: {
+        prevSlideMessage: 'Предыдущий слайд',
+        nextSlideMessage: 'Следующий слайд',
     },
     breakpoints: {
         100: {

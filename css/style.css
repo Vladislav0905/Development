@@ -68,13 +68,6 @@ a {
     cursor: pointer;
 }
 
-p {
-    padding: 0;
-    margin: 0;
-    letter-spacing: normal;
-    line-height: 32px;
-}
-
 img {
     max-width: 100%;
 }
@@ -268,9 +261,9 @@ img {
 .link-condition {
     position: relative;
     outline: none;
-    -webkit-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
     z-index: 1;
 }
 
@@ -289,11 +282,11 @@ img {
     -ms-transform: scaleX(0);
     transform: scaleX(0);
     background: var(--color-dark-violet);
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: -webkit-transform .3s ease-in-out;
-    -o-transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .link-condition:focus-visible:not(:hover):not(:active)::before {
@@ -323,11 +316,11 @@ img {
     -ms-transform: scaleX(0);
     transform: scaleX(0);
     background: var(--color-violet);
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: -webkit-transform .3s ease-in-out;
-    -o-transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .link-parameters:focus-visible:not(:hover):not(:active)::before {
@@ -339,6 +332,7 @@ img {
 
 .site-text {
     color: var(--color-white);
+    font-weight: 600;
     font-size: 18px;
     line-height: 25px;
 }
@@ -357,9 +351,9 @@ img {
     -webkit-transition-property: margin-left, padding-left;
     -o-transition-property: margin-left, padding-left;
     transition-property: margin-left, padding-left;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .link-lk__arrow-svg {
@@ -371,9 +365,9 @@ img {
     .link-lk:hover .link-lk__arrow-svg-path {
         fill: var(--color-light-purple);
         color: var(--color-light-purple);
-        -webkit-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
-        -o-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
-        transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
+        -webkit-transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
+        -o-transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
+        transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 }
 
@@ -381,9 +375,9 @@ img {
 .link-lk:active .link-lk__arrow-svg-path {
     fill: var(--color-dark-violet);
     color: var(--color-dark-violet);
-    -webkit-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
-    -o-transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: fill 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: fill 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .link-lk:active .link-lk__arrow-wrap {
@@ -479,20 +473,14 @@ img {
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: -webkit-transform .5s ease;
-    -o-transition: transform .5s ease;
-    transition: transform .5s ease;
-    transition: transform .5s ease, -webkit-transform .5s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .main-item-btn.is-active {
-    border-color: var(--color-dark-violet);
-}
-
-.main-item-btn:focus::after,
-.main-item-btn:focus {
-    color: var(--color-dark-violet);
     border-color: var(--color-dark-violet);
 }
 
@@ -501,9 +489,9 @@ img {
     .main-item-btn:hover {
         color: var(--color-violet);
         border-color: var(--color-violet);
-        -webkit-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -561,18 +549,18 @@ img {
 .main-item-link:focus-visible {
     outline-offset: -2px;
     outline: 2px solid var(--color-violet);
-    -webkit-transition: outline .3s ease-in-out;
-    -o-transition: outline .3s ease-in-out;
-    transition: outline .3s ease-in-out;
+    -webkit-transition: outline 0.3s ease-in-out;
+    -o-transition: outline 0.3s ease-in-out;
+    transition: outline 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
     .main-item-link:hover {
         outline-offset: -2px;
         outline: 2px solid var(--color-violet);
-        -webkit-transition: outline .3s ease-in-out;
-        -o-transition: outline .3s ease-in-out;
-        transition: outline .3s ease-in-out;
+        -webkit-transition: outline 0.3s ease-in-out;
+        -o-transition: outline 0.3s ease-in-out;
+        transition: outline 0.3s ease-in-out;
     }
 }
 
@@ -587,9 +575,9 @@ img {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(194, 131, 243, 0.4)), to(rgba(194, 131, 243, 0.4)));
     background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
     opacity: 0;
-    -webkit-transition: opacity .3s ease;
-    -o-transition: opacity .3s ease;
-    transition: opacity .3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .main-item-link:active,
@@ -708,6 +696,7 @@ img {
     outline: none;
     border: none;
     border-bottom: 1px solid var(--color-white);
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px
 }
@@ -739,17 +728,17 @@ img {
 .header__form-search:focus-visible {
     outline: none;
     border-color: var(--color-dark-violet);
-    -webkit-transition: border-color .3s ease-in-out;
-    -o-transition: border-color .3s ease-in-out;
-    transition: border-color .3s ease-in-out;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -o-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
     .header__form-search:hover {
         border-color: var(--color-light-purple);
-        -webkit-transition: border-color .3s ease-in-out;
-        -o-transition: border-color .3s ease-in-out;
-        transition: border-color .3s ease-in-out;
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -o-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
     }
 }
 
@@ -846,6 +835,7 @@ img {
 
 .hero__descr {
     max-width: 579px;
+    margin: 0;
     margin-bottom: 89px;
     font-weight: 700;
     font-size: 18px;
@@ -866,27 +856,27 @@ img {
 }
 
 .hero__link:focus-visible:not(:hover):not(:active) {
-    outline: 2px solid var(--color-violet);
-    outline-offset: 2px;
+    outline: 3px solid var(--color-violet);
+    outline-offset: 3px;
 }
 
 @media screen and (any-hover: hover) {
     .hero__link:hover {
         -webkit-box-shadow: inset 0 0 0 3px var(--color-decor);
         box-shadow: inset 0 0 0 3px var(--color-decor);
-        -webkit-transition: -webkit-box-shadow .2s ease-in-out;
-        transition: -webkit-box-shadow .2s ease-in-out;
-        -o-transition: box-shadow .2s ease-in-out;
-        transition: box-shadow .2s ease-in-out;
-        transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+        -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+        transition: -webkit-box-shadow 0.3s ease-in-out;
+        -o-transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
     }
 }
 
 .hero__link:active {
     background-color: var(--color-dark-violet);
-    -webkit-transition: background-color .2s ease-in-out;
-    -o-transition: background-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -908,6 +898,7 @@ img {
 
 .about-us__descr {
     max-width: 1080px;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -971,17 +962,17 @@ img {
 @media screen and (any-hover: hover) {
     .gallery__label:hover {
         color: var(--color-light-purple);
-        -webkit-transition: color .2s ease-in-out;
-        -o-transition: color .2s ease-in-out;
-        transition: color .2s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
     }
 }
 
 .gallery__label:focus-within {
     color: var(--color-light-purple);
-    -webkit-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .gallery__checkbox {
@@ -1015,29 +1006,29 @@ img {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: -webkit-transform .3s ease-in-out;
-    -o-transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .gallery__checkbox:checked+.gallery__custom-checkbox::before {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: -webkit-transform .3s ease-in-out;
-    -o-transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .gallery__checkbox:focus+.gallery__custom-checkbox::before {
     color: var(--color-violet);
-    -webkit-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .gallery__checkbox[type=checkbox]:checked+.gallery__custom-checkbox {
@@ -1111,6 +1102,15 @@ img {
     line-height: 32px;
 }
 
+.choices__inner:hover,
+.choices__list--dropdown .choices__item--selectable.is-highlighted:hover {
+    color: var(--color-white);
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: background-color, color .4s ease-in-out;
+    -o-transition: background-color, color .4s ease-in-out;
+    transition: background-color, color .4s ease-in-out;
+}
+
 .choices__list--dropdown .choices__item:not(:last-child) {
     border-bottom: 1px solid var(--color-dark-grey);
 }
@@ -1147,10 +1147,6 @@ img {
     overflow: hidden;
 }
 
-.swiper-slide__img {
-    width: 100%;
-}
-
 .gallery__swiper-button-next.swiper-button-disabled,
 .gallery__swiper-button-prev.swiper-button-disabled {
     opacity: .6;
@@ -1173,26 +1169,26 @@ img {
     .gallery__swiper-button-prev:hover,
     .gallery__swiper-button-next:hover {
         background-color: var(--color-violet);
-        -webkit-transition: background-color .2s ease-in-out;
-        -o-transition: background-color .2s ease-in-out;
-        transition: background-color .2s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
     }
 }
 
 .gallery__swiper-button-prev:focus-visible,
 .gallery__swiper-button-next:focus-visible {
     outline: 2px solid var(--background-color);
-    -webkit-transition: outline .2s ease-in-out;
-    -o-transition: outline .2s ease-in-out;
-    transition: outline .2s ease-in-out;
+    -webkit-transition: outline 0.3s ease-in-out;
+    -o-transition: outline 0.3s ease-in-out;
+    transition: outline 0.3s ease-in-out;
 }
 
 .gallery__swiper-button-prev:active,
 .gallery__swiper-button-next:active {
     background-color: var(--color-dark-violet);
-    -webkit-transition: background-color .2s ease-in-out;
-    -o-transition: background-color .2s ease-in-out;
-    transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .btn-prev {
@@ -1228,8 +1224,8 @@ img {
 .swiper-slide__btn::before {
     content: '';
     position: absolute;
-    top: 6%;
-    left: 6%;
+    top: 7%;
+    left: 23px;
     bottom: 6%;
     right: 6%;
     z-index: 100;
@@ -1245,18 +1241,18 @@ img {
 @media screen and (any-hover: hover) {
     .swiper-slide__btn:hover::before {
         opacity: 1;
-        -webkit-transition: opacity .3s ease-in-out;
-        -o-transition: opacity .3s ease-in-out;
-        transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 }
 
 .swiper-slide__btn:focus-visible {
     outline: 2px solid var(--color-dark-violet);
     outline-offset: -2px;
-    -webkit-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .swiper-slide__btn::after {
@@ -1276,9 +1272,9 @@ img {
 
 .swiper-slide__btn:active::after {
     opacity: 1;
-    -webkit-transition: opacity .2s ease-in-out;
-    -o-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 
@@ -1413,6 +1409,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
 }
 
 
@@ -1437,6 +1434,7 @@ img {
     line-height: 32px;
     color: var(--color-text);
     max-width: 1080px;
+    margin: 0;
     margin-bottom: 38px;
 }
 
@@ -1461,8 +1459,8 @@ img {
     display: block;
     -webkit-animation-name: fade-in;
     animation-name: fade-in;
-    -webkit-animation-duration: .8s;
-    animation-duration: .8s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 }
@@ -1489,10 +1487,12 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
+    margin: 0;
     color: var(--color-text);
 }
 
 .painter-descr-unknow {
+    margin: 0;
     margin-bottom: 15px;
 }
 
@@ -1549,9 +1549,9 @@ img {
     background-color: transparent;
     cursor: pointer;
     outline: none;
-    -webkit-transition: color 0.3s ease, border-color 0.3s ease;
-    -o-transition: color 0.3s ease, border-color 0.3s ease;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -1593,11 +1593,11 @@ img {
     -ms-transform: translate(-50%, -50%) scaleX(0);
     transform: translate(-50%, -50%) scaleX(0);
     background-color: var(--color-violet);
-    -webkit-transition: -webkit-transform 0.3s linear;
-    transition: -webkit-transform 0.3s linear;
-    -o-transition: transform 0.3s linear;
-    transition: transform 0.3s linear;
-    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -1630,17 +1630,17 @@ img {
     -webkit-transform: translateY(-50%) rotate(-180deg);
     -ms-transform: translateY(-50%) rotate(-180deg);
     transform: translateY(-50%) rotate(-180deg);
-    -webkit-transition: background-color 0.3s, 0.6s ease, 0.6s ease, -webkit-transform 0.3s;
-    transition: background-color 0.3s, 0.6s ease, 0.6s ease, -webkit-transform 0.3s;
-    -o-transition: background-color 0.3s, 0.6s ease, transform 0.3s, 0.6s ease;
-    transition: background-color 0.3s, 0.6s ease, transform 0.3s, 0.6s ease;
-    transition: background-color 0.3s, 0.6s ease, transform 0.3s, 0.6s ease, -webkit-transform 0.3s;
+    -webkit-transition: background-color 0.3s, 0.6s ease-in-out, 0.6s ease-in-out, -webkit-transform 0.3s;
+    transition: background-color 0.3s, 0.6s ease-in-out, 0.6s ease-in-out, -webkit-transform 0.3s;
+    -o-transition: background-color 0.3s, 0.6s ease-in-out, transform 0.3s, 0.6s ease-in-out;
+    transition: background-color 0.3s, 0.6s ease-in-out, transform 0.3s, 0.6s ease-in-out;
+    transition: background-color 0.3s, 0.6s ease-in-out, transform 0.3s, 0.6s ease-in-out, -webkit-transform 0.3s;
 }
 
 .head-icon-round {
-    -webkit-transition: fill 0.3s ease, stroke 0.3s ease;
-    -o-transition: fill 0.3s ease, stroke 0.3s ease;
-    transition: fill 0.3s ease, stroke 0.3s ease;
+    -webkit-transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    -o-transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -1740,6 +1740,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
     margin-bottom: 5px;
     color: var(--color-text);
 }
@@ -1766,11 +1767,11 @@ img {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 0.3s linear;
-    transition: -webkit-transform 0.3s linear;
-    -o-transition: transform 0.3s linear;
-    transition: transform 0.3s linear;
-    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -1823,11 +1824,11 @@ img {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 0.3s linear;
-    transition: -webkit-transform 0.3s linear;
-    -o-transition: transform 0.3s linear;
-    transition: transform 0.3s linear;
-    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -1872,11 +1873,11 @@ img {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 0.3s linear;
-    transition: -webkit-transform 0.3s linear;
-    -o-transition: transform 0.3s linear;
-    transition: transform 0.3s linear;
-    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .link--text:hover::after {
@@ -1946,18 +1947,18 @@ img {
 @media screen and (any-hover: hover) {
     .events__btn:hover {
         background-color: var(--color-decor);
-        -webkit-transition: background-color .3s ease-in-out;
-        -o-transition: background-color .3s ease-in-out;
-        transition: background-color .3s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
     }
 }
 
 .events__btn:active {
     background-color: var(--color-decor);
     border-color: var(--color-dark-violet);
-    -webkit-transition: background-color .3s ease-in-out, border .3s;
-    -o-transition: background-color .3s ease-in-out, border .3s;
-    transition: background-color .3s ease-in-out, border .3s;
+    -webkit-transition: background-color 0.3s ease-in-out, border 0.3s;
+    -o-transition: background-color 0.3s ease-in-out, border 0.3s;
+    transition: background-color 0.3s ease-in-out, border 0.3s;
 }
 
 .events__btn::before {
@@ -2069,6 +2070,7 @@ img {
 }
 
 .event__descr {
+    margin: 0;
     margin-bottom: auto;
     font-weight: 400;
     font-size: 16px;
@@ -2093,9 +2095,9 @@ img {
     width: 100%;
     height: 1px;
     background-color: var(--color-violet);
-    -webkit-transition: background-color .3s ease-in-out;
-    -o-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .event__link-text {
@@ -2106,41 +2108,41 @@ img {
 .event__link-more:focus-visible:not(:hover):not(:active)::after {
     color: var(--color-white);
     background-color: var(--color-white);
-    -webkit-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
     .event__link-more:hover::after {
         background-color: var(--color-dark-violet);
-        -webkit-transition: background-color .3s ease-in-out;
-        -o-transition: background-color .3s ease-in-out;
-        transition: background-color .3s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
     }
 }
 
 @media screen and (any-hover: hover) {
     .event__link-more:hover {
         color: var(--color-dark-violet);
-        -webkit-transition: color .3s ease-in-out;
-        -o-transition: color .3s ease-in-out;
-        transition: color .3s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
     }
 }
 
 .event__link-more:active {
     color: var(--color-text);
-    -webkit-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .event__link-more:active::after {
     background-color: var(--color-text);
-    -webkit-transition: background-color .3s ease-in-out;
-    -o-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
@@ -2163,6 +2165,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
+    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -2170,9 +2173,9 @@ img {
     position: relative;
     outline: none;
     color: var(--color-violet);
-    -webkit-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .projects__link::after {
@@ -2189,11 +2192,11 @@ img {
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 0.2s linear;
-    transition: -webkit-transform 0.2s linear;
-    -o-transition: transform 0.2s linear;
-    transition: transform 0.2s linear;
-    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .projects__link:focus-visible {
@@ -2235,26 +2238,26 @@ img {
 
 .tooltip:focus-visible {
     background-image: url("../img/projects/tooltip-active.svg");
-    -webkit-transition: background-image .3s ease-in-out;
-    -o-transition: background-image .3s ease-in-out;
-    transition: background-image .3s ease-in-out;
+    -webkit-transition: background-image 0.3s ease-in-out;
+    -o-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
     outline: none;
 }
 
 @media screen and (any-hover: hover) {
     .tooltip:hover {
         background-image: url("../img/projects/tooltip-hover.svg");
-        -webkit-transition: background-image .3s ease-in-out;
-        -o-transition: background-image .3s ease-in-out;
-        transition: background-image .3s ease-in-out;
+        -webkit-transition: background-image 0.3s ease-in-out;
+        -o-transition: background-image 0.3s ease-in-out;
+        transition: background-image 0.3s ease-in-out;
     }
 }
 
 .tooltip:active {
     background-image: url("../img/projects/tooltip-active.svg");
-    -webkit-transition: background-image .3s ease-in-out;
-    -o-transition: background-image .3s ease-in-out;
-    transition: background-image .3s ease-in-out;
+    -webkit-transition: background-image 0.3s ease-in-out;
+    -o-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
 }
 
 .tippy-box {
@@ -2328,27 +2331,27 @@ img {
 
 .projects__item-link:focus-visible:not(:hover):not(:active) {
     border: 1px solid var(--color-violet);
-    -webkit-transition: border .3s ease-in-out;
-    -o-transition: border .3s ease-in-out;
-    transition: border .3s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out;
+    -o-transition: border 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
 }
 
 .projects__item-link:active {
     border: 1px solid var(--color-violet);
-    -webkit-transition: border .3s ease-in-out;
-    -o-transition: border .3s ease-in-out;
-    transition: border .3s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out;
+    -o-transition: border 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out;
 }
 
 .projects__item-img {
     opacity: .6;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-    -webkit-transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-    transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-    -o-transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-    transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-    transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+    -o-transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -2356,11 +2359,11 @@ img {
         opacity: 1;
         filter: grayscale(0);
         -webkit-filter: grayscale(0);
-        -webkit-transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-        transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-        -o-transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-        transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-        transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+        -o-transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
     }
 }
 
@@ -2436,9 +2439,9 @@ img {
 .projects__next:active {
     background-color: var(--color-decor);
     outline: 2px solid var(--color-violet);
-    -webkit-transition: background-color 0.3s ease-in-out, outline 0.1s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out, outline 0.1s ease-in-out;
-    transition: background-color 0.3s ease-in-out, outline 0.1s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 
@@ -2507,9 +2510,9 @@ img {
     line-height: 32px;
     outline: none;
     color: var(--color-text);
-    -webkit-transition: background-color .3s ease-in-out;
-    -o-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
@@ -2537,9 +2540,9 @@ img {
     color: var(--color-violet);
     border: 2px solid currentColor;
     border-radius: 100px;
-    -webkit-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .feedback__mobile-btn:focus-visible {
@@ -2568,9 +2571,9 @@ img {
     color: var(--color-violet);
     border: 2px solid currentColor;
     border-radius: 100px;
-    -webkit-transition: background-color .1s ease-in-out;
-    -o-transition: background-color .1s ease-in-out;
-    transition: background-color .1s ease-in-out;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .feedback__btn:focus-visible {
@@ -2623,34 +2626,34 @@ img {
 .feedback__social-link:focus-visible {
     outline: none;
     opacity: .5;
-    -webkit-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
     .feedback__social-link:hover {
         opacity: .5;
-        -webkit-transition: opacity .3s ease-in-out;
-        -o-transition: opacity .3s ease-in-out;
-        transition: opacity .3s ease-in-out;
+        -webkit-transition: opacity 0.3s ease-in-out;
+        -o-transition: opacity 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
     }
 }
 
 .feedback__social-link:active {
     opacity: 1;
-    -webkit-transition: opacity .3s ease-in-out;
-    -o-transition: opacity .3s ease-in-out;
-    transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .feedback__social-icon:active {
     opacity: 1;
     border-radius: 100%;
     outline: 1px solid var(--color-dark-violet);
-    -webkit-transition: outline .3s ease-in-out;
-    -o-transition: outline .3s ease-in-out;
-    transition: outline .3s ease-in-out;
+    -webkit-transition: outline 0.3s ease-in-out;
+    -o-transition: outline 0.3s ease-in-out;
+    transition: outline 0.3s ease-in-out;
 }
 
 
@@ -2707,34 +2710,40 @@ img {
 .footer__social-link:focus-visible {
     outline: none;
     color: var(--color-white);
-    -webkit-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 @media screen and (any-hover: hover) {
     .footer__social-icon:hover {
         color: var(--color-white);
-        -webkit-transition: color .3s ease-in-out;
-        -o-transition: color .3s ease-in-out;
-        transition: color .3s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
     }
 }
 
 .footer__social-icon:active {
     color: var(--color-dark-violet);
-    -webkit-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 
 /* MEDIA */
 
 @media (max-width: 1799.99px) {
+    /* HEADER */
     .main-item:not(:last-child) {
         margin-right: 56px;
     }
+    /* GALLERY */
+    .swiper-slide__img {
+        width: 100%;
+    }
+    /* FEEDBACK */
     .feedback__wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2746,9 +2755,6 @@ img {
     }
     .feedback__address {
         margin-bottom: 30px;
-    }
-    .form__form-wrap {
-        margin-bottom: 18px;
     }
 }
 
@@ -2887,11 +2893,11 @@ img {
         -webkit-transform: translateX(-120%);
         -ms-transform: translateX(-120%);
         transform: translateX(-120%);
-        -webkit-transition: visibility 1.5s cubic-bezier(0.64, 0, 0.78, 0), -webkit-transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
-        transition: visibility 1.5s cubic-bezier(0.64, 0, 0.78, 0), -webkit-transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
-        -o-transition: visibility 1.5s cubic-bezier(0.64, 0, 0.78, 0), transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
-        transition: visibility 1.5s cubic-bezier(0.64, 0, 0.78, 0), transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
-        transition: visibility 1.5s cubic-bezier(0.64, 0, 0.78, 0), transform 1.5s cubic-bezier(0.85, 0, 0.15, 1), -webkit-transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
+        -webkit-transition: visibility 0.8s cubic-bezier(0.64, 0, 0.78, 0), -webkit-transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        transition: visibility 0.8s cubic-bezier(0.64, 0, 0.78, 0), -webkit-transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        -o-transition: visibility 0.8s cubic-bezier(0.64, 0, 0.78, 0), transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        transition: visibility 0.8s cubic-bezier(0.64, 0, 0.78, 0), transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        transition: visibility 0.8s cubic-bezier(0.64, 0, 0.78, 0), transform 0.8s cubic-bezier(0.85, 0, 0.15, 1), -webkit-transform 1.5s cubic-bezier(0.85, 0, 0.15, 1);
     }
     .header-nav .header-nav__list {
         -webkit-box-orient: vertical;
@@ -3005,9 +3011,9 @@ img {
         background-color: var(--color-white);
         height: 3.65px;
         left: 0;
-        -webkit-transition: background-color 0.2s ease-in-out;
-        -o-transition: background-color 0.2s ease-in-out;
-        transition: background-color 0.2s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
     }
     .header__burger::before {
         width: 100%;
