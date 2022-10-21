@@ -100,7 +100,6 @@ img {
     padding: 0;
     border: none;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .container {
@@ -459,7 +458,6 @@ img {
     -webkit-transition: color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .main-item-btn::after {
@@ -1104,13 +1102,13 @@ img {
     line-height: 32px;
 }
 
-.choices__inner:hover,
+.choices[data-type*=select-one] .choices__inner:hover,
 .choices__list--dropdown .choices__item--selectable.is-highlighted:hover {
     color: var(--color-white);
     background-color: rgba(255, 255, 255, 0.2);
-    -webkit-transition: background-color, color .4s ease-in-out;
-    -o-transition: background-color, color .4s ease-in-out;
-    transition: background-color, color .4s ease-in-out;
+    -webkit-transition: background-color.3s ease-in-out, color .3s ease-in-out;
+    -o-transition: background-color.3s ease-in-out, color .3s ease-in-out;
+    transition: background-color.3s ease-in-out, color .3s ease-in-out;
 }
 
 .choices__list--dropdown .choices__item:not(:last-child) {
@@ -1549,7 +1547,6 @@ img {
     padding: 41px 120px 41px 0;
     text-align: left;
     background-color: transparent;
-    cursor: pointer;
     outline: none;
     -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
@@ -1559,14 +1556,25 @@ img {
 @media screen and (any-hover: hover) {
     .accordion__question:first-child .accordion__heading:hover,
     .accordion__heading:hover {
+        color: var(--color-violet);
         border-color: var(--color-violet);
+        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+    .accordion__heading:hover,
+    .accordion__heading,
+    .accordion__question:hover .accordion__heading-text-wrap {
+        color: var(--color-violet);
+        transition: color 0.3s ease-in-out;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
     }
 }
 
 .accordion__question:first-child .accordion__heading:active,
-.accordion__heading:active,
 .is-active.accordion__question:first-child .accordion__heading,
-.is-active.accordion__question .accordion__heading .accordion__heading-text-wrap {
+.is-active.accordion__question .accordion__heading-text-wrap {
     border-color: var(--color-dark-violet);
     color: var(--color-dark-violet);
 }
@@ -1602,22 +1610,16 @@ img {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-@media screen and (any-hover: hover) {
-    .accordion__heading:hover {
-        color: var(--color-violet);
-    }
-}
-
 .accordion__heading:active {
     color: var(--color-dark-violet);
 }
 
-.accordion__heading:focus-visible:not(:active) {
+.accordion__heading:focus-visible:not(:active):not(:hover) {
     color: var(--color-white);
     outline: none;
 }
 
-.accordion__heading:focus-visible:not(:active) .accordion__heading-text::before {
+.accordion__heading:focus-visible:not(:active):not(:hover) .accordion__heading-text::before {
     -webkit-transform: translate(-50%, -50%) scaleX(1);
     -ms-transform: translate(-50%, -50%) scaleX(1);
     transform: translate(-50%, -50%) scaleX(1);
@@ -1799,24 +1801,25 @@ img {
     color: var(--background-color);
 }
 
-.accordion__painter-link.active {
+.accordion__painter-btn.active {
     color: var(--color-dark-violet);
 }
 
-.link {
+.underlin {
     position: relative;
     display: inline-block;
     padding: 0;
     border: none;
+    outline: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-.link::before {
+.underlin::before {
     content: "";
     position: absolute;
     left: -6px;
-    right: -6px;
+    right: -1px;
     top: -3px;
     bottom: -3px;
     background-color: var(--color-violet);
@@ -1834,34 +1837,29 @@ img {
 }
 
 @media screen and (any-hover: hover) {
-    .link:hover {
+    .underlin:hover {
         color: var(--violet-light);
     }
 }
 
-.link:focus-visible {
-    outline: none;
-}
-
-.link:focus-visible:not(:hover):not(:active)::before {
+.underlin:focus-visible:not(:hover):not(:active)::before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-.link:active {
+.underlin:focus-visible:not(:hover):not(:active) {
+    color: var(--color-text);
+}
+
+.underlin:active {
     color: var(--color-dark-violet);
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
 }
 
-.link--text::before {
-    left: -1px;
-    right: -1px;
-}
-
-.link--text::after {
+.focus-text::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1882,17 +1880,13 @@ img {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-.link--text:hover::after {
+.focus-text:hover::after {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-.link--text:focus-visible:not(:hover):not(:active) {
-    color: var(--color-text);
-}
-
-.link__text {
+.accordion__painter-btn__text {
     position: relative;
 }
 
@@ -2382,7 +2376,6 @@ img {
     border-width: 0px;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
 }
 
 .projects__prev::before {
@@ -2988,7 +2981,6 @@ img {
     }
     .header__burger {
         display: block;
-        cursor: pointer;
         position: relative;
         outline: none;
         width: 36px;
