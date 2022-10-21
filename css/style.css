@@ -1162,7 +1162,6 @@ img {
     border-width: 0px;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
 }
 
 @media screen and (any-hover: hover) {
@@ -1812,7 +1811,6 @@ img {
     border: none;
     outline: none;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .underlin::before {
