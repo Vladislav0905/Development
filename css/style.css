@@ -1571,6 +1571,15 @@ img {
     }
 }
 
+.accordion__heading:active,
+.accordion__heading,
+.accordion__question:active .accordion__heading-text-wrap {
+    color: var(--color-dark-violet);
+    transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
 .accordion__question:first-child .accordion__heading:active,
 .is-active.accordion__question:first-child .accordion__heading,
 .is-active.accordion__question .accordion__heading-text-wrap {
@@ -1651,6 +1660,11 @@ img {
         fill: var(--color-decor);
         stroke: var(--color-decor);
     }
+}
+
+.accordion__heading:active .head-icon-round {
+    fill: var(--color-decor);
+    stroke: var(--color-violet);
 }
 
 .accordion__heading:focus-visible .head-icon-round {
